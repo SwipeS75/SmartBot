@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartBot - Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Uncial Antiqua', cursive;
+      background-color: #5a3e2b; /* couleur bois foncé */
+      background-image: url('celtic_pattern.jpg'), url('celtic_pattern.jpg');
+      background-repeat: repeat-y, repeat-y;
+      background-position: left top, right top;
+      background-size: auto, auto; /* taille naturelle de l'image */
+      color: #f5f1e7;
+      text-align: center;
+      min-height: 100vh;
+      background-attachment: fixed, fixed;
+      padding: 0 160px; /* espace sur les côtés pour ne pas que le contenu recouvre les textures */
+    }
 
+    header {
+      background-color: rgba(107, 76, 59, 0.85); /* brun bois foncé semi-transparent */
+      padding: 40px 20px;
+      border-bottom: 5px solid #d4af37; /* doré plus chaud */
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #d4af37; /* doré plus chaud */
+      text-shadow: 1px 1px 3px #3a2e22;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #5a3e2b; /* brun bois foncé */
+      color: #f5f1e7;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #d4af37; /* doré au hover */
+      color: #3a2e22; /* brun foncé */
+      box-shadow: 0 6px 12px rgba(212, 175, 55, 0.8);
+    }
+
+    section {
+      margin: 60px auto;
+      max-width: 800px;
+      background-color: rgba(90, 62, 43, 0.75); /* brun bois semi-transparent */
+      padding: 40px;
+      border-radius: 15px;
+      border: 2px solid #d4af37; /* doré */
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+    }
+
+    footer {
+      margin-top: 100px;
+      font-size: 1.5em;
+      color: #d4af37;
+      text-shadow: 1px 1px 3px #3a2e22;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenue dans le Royaume de SmartBot</h1>
+  </header>
+
+  <section>
+    <p>
+      Entrez dans l'univers de <strong>SmartBot</strong>, un bot Discord où se mêlent aventure, combat et équipements légendaires.
+      Préparez-vous à affronter des créatures, collectionner des objets épiques et gravir les échelons vers la gloire !
+    </p>
+
+    <nav>
+      <a href="guide.html" class="btn">📜 Consulter le Guide</a>
+      <a href="https://discord.com/oauth2/authorize?client_id=TON_CLIENT_ID&scope=bot&permissions=8" class="btn" target="_blank">✨ Inviter le Bot</a>
+    </nav>
+  </section>
+
+  <footer>
+    <p style="background-color: rgba(58, 46, 34, 0.6); padding: 10px 20px; border-radius: 10px; display: inline-block;">
+      🌿 Que la chance des anciens vous accompagne.
+    </p>
+  </footer>
+</body>
+</html>
