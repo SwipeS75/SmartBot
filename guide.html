@@ -1,1 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartBot - Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Uncial Antiqua', cursive;
+      background-color: #5a3e2b; /* couleur bois foncé */
+      background-image: url('celtic_pattern.jpg'), url('celtic_pattern.jpg');
+      background-repeat: repeat-y, repeat-y;
+      background-position: left top, right top;
+      background-size: auto, auto; /* taille naturelle de l'image */
+      color: #f5f1e7;
+      text-align: center;
+      min-height: 100vh;
+      background-attachment: fixed, fixed;
+      padding: 0 160px; /* espace sur les côtés pour ne pas que le contenu recouvre les textures */
+    }
 
+    header {
+      background-color: rgba(107, 76, 59, 0.85);
+      padding: 40px 20px;
+      border-bottom: 5px solid #d4af37;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #d4af37;
+      text-shadow: 1px 1px 3px #3a2e22;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: #f5f1e7;
+      text-decoration: none;
+      background-color: #5a3e2b;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      font-weight: 600;
+    }
+
+    nav ul li a:hover {
+      background-color: #d4af37;
+      color: #3a2e22;
+      box-shadow: 0 6px 12px rgba(212,175,55,0.8);
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: rgba(90, 62, 43, 0.75);
+      padding: 40px;
+      border-radius: 15px;
+      border: 2px solid #d4af37;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+      text-align: left;
+      color: #f5f1e7;
+    }
+
+    section h2 {
+      color: #d4af37;
+      text-shadow: 1px 1px 3px #3a2e22;
+      margin-top: 0;
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 1.5em;
+      color: #d4af37;
+      text-shadow: 1px 1px 3px #3a2e22;
+      padding: 20px 0;
+    }
+
+    /* Boutons dans les sections */
+    .btn {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      background-color: #5a3e2b;
+      color: #f5f1e7;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #d4af37;
+      color: #3a2e22;
+      box-shadow: 0 6px 12px rgba(212,175,55,0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur le site de SmartBot</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Accueil</a></li>
+      <li><a href="#commandes">📜 Commandes</a></li>
+      <li><a href="#loot">🎲 Loot</a></li>
+      <li><a href="#equipement">🛡️ Équipement</a></li>
+      <li><a href="#amelioration">⚙️ Amélioration</a></li>
+      <li><a href="#boss">🐉 Boss</a></li>
+      <li><a href="#barre_de_vie">❤️ Barre de vie</a></li>
+      <li><a href="#important">📌 Important à savoir</a></li>
+      <li><a href="#invite">🤖 Inviter le bot</a></li>
+    </ul>
+  </nav>
+
+  <section id="commandes">
+    <h2>📜 Commandes du bot</h2>
+    <h3>Aide et informations</h3>
+    <ul>
+      <li><code>!help</code> – Aide rapide pour débuter.</li>
+      <li><code>!health</code> – Affiche vos points de vie actuels.</li>
+      <li><code>!moblist</code> – Liste des créatures disponibles pour le combat.</li>
+      <li><code>!bosslist</code> – Liste complète des boss.</li>
+      <li><code>!stats &lt;user&gt;</code> – Affiche les statistiques d’un utilisateur.</li>
+    </ul>
+
+    <h3>Économie</h3>
+    <ul>
+      <li><code>!daily</code> – Gagnez 300 pièces par jour (reset à minuit).</li>
+      <li><code>!balance</code> – Affiche vos pièces actuelles.</li>
+      <li><code>!rank</code> – Classement des joueurs les plus riches.</li>
+      <li><code>!pay &lt;user&gt;</code> – Donne des pièces à un autre joueur.</li>
+      <li><code>!shop</code> – Boutique d’objets (navigation par flèches).</li>
+      <li><code>!buy &lt;objet&gt;</code> – Achetez un objet.</li>
+      <li><code>!sell &lt;objet&gt;</code> – Vendez un objet (certains objets non vendables).</li>
+      <li><code>!loot</code> – Gagne ou perds entre 0 et 500 pièces (cooldown 10 min).</li>
+      <li><code>!epicshop</code> – Boutique spéciale des boss.</li>
+      <li><code>!epicbuy &lt;objet&gt;</code> – Achats dans la boutique des boss.</li>
+    </ul>
+
+    <h3>Gestion d’inventaire</h3>
+    <ul>
+      <li><code>!inventory</code> – Affiche votre inventaire (avec pagination).</li>
+      <li><code>!equip &lt;objet&gt;</code> – Équipe une arme ou armure.</li>
+    </ul>
+
+    <h3>Combat</h3>
+    <ul>
+      <li><code>!fight &lt;mob&gt;</code> – Combat contre un mob (cooldown 1 min).</li>
+      <li><code>!regen</code> – Consomme une potion de soin pour récupérer 50 PV.</li>
+      <li><code>!boss &lt;nom du boss&gt;</code> – Combat contre un boss.</li>
+      <li><code>!respawn</code> – À utiliser après la mort.</li>
+    </ul>
+
+    <h3>Administrateur</h3>
+    <ul>
+      <li><code>!heal &lt;user&gt;</code> – Soigne un joueur (admin only).</li>
+      <li><code>!admingive &lt;user&gt; &lt;montant&gt;</code> – Donne des pièces à un joueur (admin only).</li>
+      <li><code>!adminset &lt;user&gt; &lt;montant&gt;</code> – Définit le solde d’un joueur (admin only).</li>
+    </ul>
+  </section>
+
+  <section id="loot">
+    <h2>🎲 Commande <code>!loot</code></h2>
+    <p><code>!loot</code> est une commande <strong>un peu complexe</strong>. Vous pouvez l'exécuter <strong>uniquement si vous possédez 500 pièces ou plus</strong>. Elle est influencée par certains objets que vous possédez :</p>
+    <ul>
+      <li><strong>Le bouclier</strong></li>
+      <li><strong>L'anneau du roi</strong></li>
+    </ul>
+    <p>Le bouclier divise par deux les pertes. L'anneau du roi double vos gains/pertes.</p>
+    <p>Lors de l'exécution, vous pouvez choisir d'utiliser ces objets.</p>
+    <img src="SmartBot_loot_1.png" alt="Interface loot 1" />
+    <p>Vous pouvez utiliser aucun, un ou les deux objets puis valider.</p>
+    <img src="SmartBot_loot_2.png" alt="Interface loot 2" />
+    <p>Le résultat vous est alors affiché avec les effets appliqués.</p>
+    <img src="SmartBot_loot_3.png" alt="Interface loot 3" />
+    <p>L'anneau du roi et le bouclier s'achètent en boutique.</p>
+    <h4>Vous pouvez aussi ne pas utiliser ces objets et valider directement !</h4>
+  </section>
+
+  <section id="equipement">
+    <h2>🛡️ Équipement</h2>
+    <p>Le système d'équipement est la chose <strong>la plus difficile (et la plus importante) à comprendre</strong>.</p>
+    <p>Avec <code>!shop</code>, vous voyez objets et stats.</p>
+    <img src="armure_shop.png" alt="shop" />
+    <p>Exemple : Armure de la Lune coûte 50 000 pièces et donne 7 points d'armure.</p>
+    <img src="armure_de_la_lune.png" alt="shop2" />
+    <h3>Points d'armure = % chance d'esquive</h3>
+    <p>7 points d'armure = 7% de chance d'éviter un coup adverse.</p>
+    <h3>Équiper un objet</h3>
+    <p>Commande : <code>!equip &lt;nom objet&gt;</code>.</p>
+    <h3>Points de dégâts</h3>
+    <p>Dégâts retirés à l'adversaire si pas d'esquive/blocage.</p>
+    <h3>Points de vie</h3>
+    <p>Quand ils tombent à 0, vous perdez.</p>
+  </section>
+
+  <section id="amelioration">
+    <h2>⚒️ Amélioration</h2>
+    <p>
+      Lorsque vous exécutez <code>!shop</code> vous pouvez acheter une <strong>amélioration de forge</strong> pour 25 000 pièces.<br />
+      Cette amélioration de forge vous permet d'améliorer une pièce de votre équipement.
+    </p>
+    <p>
+      En effet, si vous possédez un <em>arc du chant des druidesses</em> ainsi qu'une amélioration de forge, vous pouvez alors acheter l'<em>arc du chant des druidesses amélioré</em>.
+    </p>
+    <p>
+      L'amélioration de forge et votre arc de base seront alors remplacés par l'arc amélioré.
+    </p>
+  </section>
+
+  <section id="boss">
+    <h2>🐉 Boss</h2>
+    <p>Les boss sont puissants et nécessitent des clefs spéciales achetables.</p>
+    <p>Exemple : La Clef des Enfers permet d'affronter Cerbère une fois.</p>
+    <p>Défaite = clef perdue, victoire = loot spécial.</p>
+    <p>Commande : <code>!boss &lt;nom du boss&gt;</code></p>
+  </section>
+
+  <section id="barre_de_vie">
+    <h2>❤️ Barre de vie</h2>
+    <p>Affiche vos PV en combat. Plus verte = plus de vie.</p>
+    <img src="SmartBot_bpv.png" alt="Barre de vie" />
+  </section>
+
+  <section id="important">
+    <h2>📌 Important à savoir</h2>
+    <ul>
+      <li>Cooldowns pour <code>!loot</code> et <code>!fight</code>.</li>
+      <li>Certains objets non vendables.</li>
+      <li>Objets rares gagnés en combat.</li>
+    </ul>
+  </section>
+
+  <section id="invite">
+    <h2>🤖 Inviter le bot</h2>
+    <p>Utilisez ce lien pour inviter SmartBot sur votre serveur :</p>
+    <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot" target="_blank" class="invite-link">Inviter SmartBot</a>
+  </section>
+
+  <footer>
+    &copy; 2025 SmartBot - Tous droits réservés
+  </footer>
+</body>
+</html>
