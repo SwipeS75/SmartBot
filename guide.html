@@ -201,13 +201,11 @@
     <p>Exemple : Armure de la Lune coûte 50 000 pièces et donne 7 points d'armure.</p>
     <img src="armure_de_la_lune.png" alt="armurelune" />
     <h3>Points d'armure = % chance d'esquive</h3>
-    <p>7 points d'armure = 7% de chance d'éviter un coup adverse.</p>
-    <h3>Équiper un objet</h3>
-    <p>Commande : <code>!equip &lt;nom objet&gt;</code>.</p>
+    <p>7 points d'armure = 7% de chance d'éviter un coup adverse, peu importe les dégâts du coup donné !</p>
     <h3>Points de dégâts</h3>
-    <p>Dégâts retirés à l'adversaire si pas d'esquive/blocage.</p>
+    <p>Les dégâts retirés à l'adversaire seront toujours ceux affichés par l'arme.</p>
     <h3>Points de vie</h3>
-    <p>Quand ils tombent à 0, vous perdez.</p>
+    <p>Quand ils tombent à 0, vous perdez la moitié de votre bourse.</p>
   </section>
 
   <section id="amelioration">
@@ -228,26 +226,27 @@
     <h2>🐉 Boss</h2>
     <p>Les boss sont puissants et nécessitent des clefs spéciales achetables.</p>
     <p>Exemple : La Clef des Enfers permet d'affronter Cerbère une fois.</p>
-    <p>Défaite = clef perdue, victoire = loot spécial.</p>
-    <p>Commande : <code>!boss &lt;nom du boss&gt;</code></p>
+    <p>En cas de défaite vous perdez la clef et la moitié de votre portefeuille. Sinon vous récupérerez le loot du boss</p>
+    <p>Rappel de la commande : <code>!boss &lt;nom du boss&gt;</code></p>
   </section>
 
   <section id="barre_de_vie">
     <h2>❤️ Barre de vie</h2>
-    <p> <code>!regen</code> vous rend 50 points de vie à condition que vous ayez acheté une potio nde soin dans la boutique. Lorsque vous exécutez cette commande, une potion sera supprimée de votre inventaire.</p>
+    <p> <code>!regen</code> vous rend 50 points de vie à condition que vous ayez acheté une potion de soin dans la boutique. Lorsque vous exécutez cette commande, une potion sera supprimée de votre inventaire.</p>
   </section>
 
   <section id="important">
     <h2>📌 Important à savoir</h2>
     <ul>
       <li>Cooldowns pour <code>!loot</code> et <code>!fight</code>.</li>
-      <li>Certains objets non vendables.</li>
-      <li>Objets rares gagnés en combat.</li>
+      <li>Les objets de la loot table des boss sont non vendables.</li>
+      <li>Le loot des mobs "classiques" est vendable ! Rappel : <code>!sell</code> </li>
+      <li>ATTENTION ! N'oubliez pas d'effectuer la commande <code>!respawn</code> ou vous vous retrouverez en combat avec un HP de débogage (et donc avec une chance infime de survirve). </li>
     </ul>
   </section>
 
   <footer>
-    &copy; 2025 SmartBot - Tous droits réservés
+    &copy; 2025 SmartBot - Concu par un con pour SmartCeltic
   </footer>
 </body>
 </html>
