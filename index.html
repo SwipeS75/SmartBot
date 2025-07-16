@@ -9,28 +9,28 @@
     body {
       margin: 0;
       font-family: 'Uncial Antiqua', cursive;
-      background-color: #5a3e2b; /* couleur bois foncé */
+      background-color: #5a3e2b;
       background-image: url('celtic_pattern.jpg'), url('celtic_pattern.jpg');
       background-repeat: repeat-y, repeat-y;
       background-position: left top, right top;
-      background-size: auto, auto; /* taille naturelle de l'image */
+      background-size: auto, auto;
       color: #f5f1e7;
       text-align: center;
       min-height: 100vh;
       background-attachment: fixed, fixed;
-      padding: 0 160px; /* espace sur les côtés pour ne pas que le contenu recouvre les textures */
+      padding: 0 160px;
     }
 
     header {
-      background-color: rgba(107, 76, 59, 0.85); /* brun bois foncé semi-transparent */
+      background-color: rgba(107, 76, 59, 0.85);
       padding: 40px 20px;
-      border-bottom: 5px solid #d4af37; /* doré plus chaud */
+      border-bottom: 5px solid #d4af37;
     }
 
     header h1 {
       font-size: 3em;
       margin: 0;
-      color: #d4af37; /* doré plus chaud */
+      color: #d4af37;
       text-shadow: 1px 1px 3px #3a2e22;
     }
 
@@ -43,7 +43,7 @@
       margin: 20px;
       padding: 15px 30px;
       font-size: 1.2em;
-      background-color: #5a3e2b; /* brun bois foncé */
+      background-color: #5a3e2b;
       color: #f5f1e7;
       text-decoration: none;
       border-radius: 10px;
@@ -52,18 +52,18 @@
     }
 
     .btn:hover {
-      background-color: #d4af37; /* doré au hover */
-      color: #3a2e22; /* brun foncé */
+      background-color: #d4af37;
+      color: #3a2e22;
       box-shadow: 0 6px 12px rgba(212, 175, 55, 0.8);
     }
 
     section {
       margin: 60px auto;
       max-width: 800px;
-      background-color: rgba(90, 62, 43, 0.75); /* brun bois semi-transparent */
+      background-color: rgba(90, 62, 43, 0.75);
       padding: 40px;
       border-radius: 15px;
-      border: 2px solid #d4af37; /* doré */
+      border: 2px solid #d4af37;
       box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
     }
 
@@ -72,6 +72,7 @@
       font-size: 1.5em;
       color: #d4af37;
       text-shadow: 1px 1px 3px #3a2e22;
+      text-align: center; /* ajouté */
     }
   </style>
 </head>
@@ -81,26 +82,25 @@
   </header>
 
   <section>
-  <p>
-    Entrez dans l'univers de <strong>SmartBot</strong>, un bot Discord où se mêlent aventure, combat et équipements légendaires.
-    Préparez-vous à affronter des créatures, collectionner des objets épiques et gravir les échelons vers la gloire !
-  </p>
+    <p>
+      Entrez dans l'univers de <strong>SmartBot</strong>, un bot Discord où se mêlent aventure, combat et équipements légendaires.
+      Préparez-vous à affronter des créatures, collectionner des objets épiques et gravir les échelons vers la gloire !
+    </p>
 
-  <nav>
-    <a href="guide.html" class="btn">📜 Consulter le Guide</a>
-    <a href="https://discord.com/oauth2/authorize?client_id=1392409906073567324&permissions=8&integration_type=0&scope=bot" class="btn" target="_blank">✨ Inviter le Bot</a>
-  </nav>
-</section>
+    <nav>
+      <a href="guide.html" class="btn">📜 Consulter le Guide</a>
+      <a href="https://discord.com/oauth2/authorize?client_id=1392409906073567324&permissions=8&integration_type=0&scope=bot" class="btn" target="_blank">✨ Inviter le Bot</a>
+    </nav>
+  </section>
 
-  <footer style="text-align: center;">
-  <div style="background-color: rgba(58, 46, 34, 0.6); padding: 10px 20px; border-radius: 10px; display: inline-block; margin-bottom: 10px;">
-    🌿 Que la chance des anciens vous accompagne.
-  </div>
-  
-  <p style="font-size: 0.9em; color: #f5f1e7; margin-top: 10px;">
-    Merci à <a href="https://hawai-s-panel.zouzoual.fr/auth/login" target="_blank" style="color: #d4af37; text-decoration: underline;">Pterodactyl</a> pour mon hébergement !
-  </p>
-</footer>
-  
+  <footer>
+    <div style="background-color: rgba(58, 46, 34, 0.6); padding: 10px 20px; border-radius: 10px; display: inline-block; margin-bottom: 10px;">
+      🌿 Que la chance des anciens vous accompagne.
+    </div>
+
+    <p style="font-size: 0.9em; color: #f5f1e7; margin-top: 10px;">
+      Merci à <a href="https://hawai-s-panel.zouzoual.fr/auth/login" target="_blank" style="color: #d4af37; text-decoration: underline;">Pterodactyl</a> pour mon hébergement !
+    </p>
+  </footer>
 </body>
 </html>
